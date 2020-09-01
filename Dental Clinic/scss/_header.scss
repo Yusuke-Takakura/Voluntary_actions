@@ -1,0 +1,40 @@
+.header {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    &__head {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: right;
+        &__name {
+            font-size: 3.5rem;
+            &::before {
+                content: "";
+                display: inline-block;
+                height: 50px;
+                width: 100px;
+                background-image: url(../img/mark_social_distance_j.png);
+                background-size: contain;
+                vertical-align: top;
+            }
+        }
+        &__adress {
+            font-size: 1.5rem;
+            & p:not(:first-child) {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    margin-top: 15px;
+    & li {
+        text-align: center;
+        width: (100% / 4);
+    }
+}
